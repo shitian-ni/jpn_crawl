@@ -51,3 +51,6 @@ for url in URLs:
         with open('status2.txt','w') as f:
             f.write("Error, But Continue\n")
         pass
+        
+with open('infoWiki.txt','w') as f:
+    json.dump(dictionary, f, ensure_ascii=False, indent=4).encode('utf8')
